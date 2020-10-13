@@ -1,3 +1,9 @@
+# Commands
+
+Run clonning the template run `npm i` or `yarn`
+
+# From here it is auto generate Create React App Readme:
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
