@@ -6,7 +6,7 @@ const TopicContainer = ({ topics, title,summary }) => {
   return (
       <div className="mx-5 md:mx-20">
           <TopicTitle title={title} summary={summary} />
-        <div className=" inline-display  bg-white shadow-lg rounded">
+        <div className=" inline-display  bg-white shadow-lg rounded select-none">
       {topics.map((topic, index) => (
             <Topic key={index} topic={topic.title} subtopics={topic.subSections} isCompleted={topic.isCompleted} />
       ))}

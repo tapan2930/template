@@ -5,9 +5,9 @@ import Ticker from "./Ticker";
 const Topic = ({ topic, subtopics, isCompleted }) => {
   const [isSubTopics, setSubTopic] = useState(true);
   return (
-    <div className=" cursor-pointer  w-full">
-      <div className="inline-flex w-full border-b hover:bg-gray-200 transition duration-100 ease-out">
-        <div className="mr-5 p-5">
+    <div className=" cursor-pointer  w-full removeTint">
+      <div className="inline-flex w-full border-b hover:bg-gray-200  transition duration-100 ease-out">
+        <div className=" md:mr-5 p-5">
           <Ticker isTicked={isCompleted} name={Math.random()} />
         </div>
 
@@ -18,7 +18,7 @@ const Topic = ({ topic, subtopics, isCompleted }) => {
       <div className={isSubTopics && "hidden"}>
         {subtopics.map((subtopic, index) => (
           <div
-            className=" hover:bg-gray-200 transition duration-100 ease-out"
+            className=" hover:bg-gray-300 transition duration-100 ease-out"
             key={index}
           >
             <SubTopic subtopic={subtopic} />

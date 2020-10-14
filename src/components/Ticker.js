@@ -4,10 +4,11 @@ const Ticker = ({isTicked, name}) => {
   const [isTick, setTick] = useState(isTicked)
 
     return ( 
-        <label class="round">
-        <input type="checkbox" name={name} checked={isTick} onClick={()=>setTick(!isTick)}/>
-        <span class="checkmark"></span>
+        <label className="round"><span className="invisible">"</span>
+        <input type="checkbox" name={name} checked={isTick} onChange={()=>setTick(!isTick)}/>
+        <span className="checkmark"></span>
       </label>
+
      );
 }
  

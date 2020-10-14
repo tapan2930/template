@@ -19201,8 +19201,9 @@ video {
 .round {
   display: block;
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
+  padding-left: 24px;
+  /* margin-bottom: 12px; */
+  height: 28px;
   cursor: pointer;
   font-size: 22px;
   -webkit-user-select: none;
@@ -19265,6 +19266,10 @@ video {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
+}
+
+.removeTint{
+  -webkit-tap-highlight-color: transparent
 }
 
 @media (min-width: 640px) {

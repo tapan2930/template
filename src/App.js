@@ -18,7 +18,7 @@ const topicData={
     {
       title:"30+ interactive class",
       isCompleted: true,
-      subSections: ["lession1", "lession2", "lession3", "lession4"] 
+      subSections: ["Section Overviev", "Resume", "Exercise: Resume Walkthrough", "Section Summary"] 
     },
     {
       title:"31+ interactive class",
@@ -88,8 +88,8 @@ function App() {
      <InfoSection {...InfoData} />
      {
        topicData.data.map((topics,index)=>(
-         <div className="md:w-3/4 mt-10">
-        <TopicContainer key={index} {...topics}/>
+         <div  key={index} className="md:w-3/4 mt-10">
+        <TopicContainer {...topics}/>
          </div>
        ))
      }

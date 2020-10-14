@@ -14,7 +14,7 @@ const InfoSection = ({title, summary, highlights}) => {
         <p className="text-white mb-5">{summary}</p>
         <div className="text-white flex mb-5 flex-col md:flex-row">
           {highlights.map((highlight, index) => (
-            <div className="mr-0 md:mr-6"><HighLights key={index} value={highlight} /></div>
+            <div key={index} className="mr-0 md:mr-6"><HighLights value={highlight} /></div>
           ))}
         </div>
         <div className="pb-5"><MyButton icon={play} value={"Start course"} /></div> 
