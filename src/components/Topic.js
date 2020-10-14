@@ -6,7 +6,7 @@ const Topic = ({ topic, subtopics, isCompleted }) => {
   const [isSubTopics, setSubTopic] = useState(true);
   return (
     <div className=" cursor-pointer  w-full removeTint">
-      <div className="inline-flex w-full border-b hover:bg-gray-200  transition duration-100 ease-out">
+      <div className="inline-flex w-full border-b md:hover:bg-gray-200  transition duration-100 ease-out">
         <div className=" md:mr-5 p-5">
           <Ticker isTicked={isCompleted} name={Math.random()} />
         </div>
